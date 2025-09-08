@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  fake_server:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./received_audio:/app/received_audio
